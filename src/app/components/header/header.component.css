@@ -1,0 +1,10 @@
+.bg-primary {
+  @apply bg-teal-800 text-yellow-100;
+}
+.mdc-button, .mdc-icon-button {
+  @apply hover:bg-teal-600;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

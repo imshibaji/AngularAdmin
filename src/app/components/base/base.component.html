@@ -1,0 +1,8 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer class="side-nav" [mode]="modes" [opened]="opened">
+    <ng-content select="[sidenav]"></ng-content>
+  </mat-drawer>
+  <mat-drawer-content class="page-content">
+    <ng-content></ng-content>
+  </mat-drawer-content>
+</mat-drawer-container>

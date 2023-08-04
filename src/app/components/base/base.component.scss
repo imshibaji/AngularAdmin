@@ -1,0 +1,14 @@
+.example-container{
+  width: 100%;
+  height: 93vh;
+}
+.side-nav{
+  width: 200px;
+  padding: 20px;
+  height: 93vh;
+}
+.page-content{
+  display: flex;
+  padding: 20px;
+  @apply flex flex-col h-[92vh] p-5;
+}

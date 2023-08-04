@@ -1,0 +1,13 @@
+<app-header (drawer)="opened = !opened"></app-header>
+<div>
+  <app-base [opened]="opened">
+    <div sidenav>
+      <a routerLink="/" class="w-full" mat-button><mat-icon>dashboard</mat-icon>Dashboard</a>
+      <a routerLink="/about" class="w-full" mat-button><mat-icon>notes</mat-icon>Articles</a>
+      <a routerLink="/contact" class="w-full" mat-button><mat-icon>group</mat-icon>Users</a>
+    </div>
+
+    <ng-content></ng-content>
+
+  </app-base>
+</div>

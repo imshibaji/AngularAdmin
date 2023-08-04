@@ -1,0 +1,10 @@
+<mat-grid-list cols="4" class="w-full" rowHeight="350px">
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      style="background-image: url({{tile.img}});background-size: cover; background-position: center;"
+      >
+    {{tile.text}}
+  </mat-grid-tile>
+</mat-grid-list>

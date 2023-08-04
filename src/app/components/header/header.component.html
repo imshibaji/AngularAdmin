@@ -1,0 +1,52 @@
+<mat-toolbar class="bg-primary">
+  <button (click)="drawer.next()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="pl-2">{{title}}</span>
+  <span class="spacer"></span>
+  <!-- <a mat-button>Home</a>
+  <a mat-button>About</a>
+  <a mat-button>Contact</a> -->
+  <button mat-button extended>
+    <mat-icon>home</mat-icon>
+    Home
+  </button>
+  <button mat-icon-button [matMenuTriggerFor]="notify">
+    <mat-icon>notifications</mat-icon>
+  </button>
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>settings</mat-icon>
+    Settings
+  </button>
+</mat-toolbar>
+
+
+<mat-menu #notify="matMenu">
+  <button mat-menu-item>
+    <mat-icon>priority_high</mat-icon>
+    <span>This Message Received</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>priority_high</mat-icon>
+    <span>This Message Received</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>priority_high</mat-icon>
+    <span>This Message Received</span>
+  </button>
+</mat-menu>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>dialpad</mat-icon>
+    <span>Change Password</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>voicemail</mat-icon>
+    <span>User Details</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>logout</mat-icon>
+    <span>Logout</span>
+  </button>
+</mat-menu>
